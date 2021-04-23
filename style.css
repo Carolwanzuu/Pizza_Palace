@@ -19,3 +19,13 @@ h2{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 5%;
 }
+#size{
+    align-items: center;
+    justify-content: center;
+    margin: 10%;
+}
+#crust{
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+}
