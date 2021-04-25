@@ -56,7 +56,7 @@ $(document).ready(function(){
 
          let newOrder = new Pizza(size, crust,toppings);  
 
-         $("ul#orders").append("<li><span class='order'>" + newOrder.order() + "</span></li>");   
+         $("ul#orders").append("<li><span class='anotherorder'>" + newOrder.Order() + "</span></li>");   
     })
 
 })
