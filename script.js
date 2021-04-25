@@ -30,6 +30,9 @@ function Pizza(size, crust, toppings){
         this.crust = crust;
         this.toppings = toppings;
     }
+    Pizza.prototype.Order = function(){
+        return this.size + " " + this.crust + " "+this.toppings;
+    }
 
     // $(document).ready(function(){
     //     $("#submit").click(function(event){
@@ -41,7 +44,7 @@ function Pizza(size, crust, toppings){
     //     })
     
     // })
-//  let Order1 = new Pizza(size, crust,toppings);  
+//  let newOrder = new Pizza(size, crust,toppings);  
 
 $(document).ready(function(){
     $("form#makeOrder").submit(function(event){
@@ -51,7 +54,9 @@ $(document).ready(function(){
         let toppings = $("input#toppings").val();
          //console.log(size, crust, toppings);
 
-         $("ul#contacts").append("<li><span class='contact'>" + newContact.fullName() + "</span></li>");   
+         let newOrder = new Pizza(size, crust,toppings);  
+
+         $("ul#orders").append("<li><span class='order'>" + newOrder.order() + "</span></li>");   
     })
 
 })
