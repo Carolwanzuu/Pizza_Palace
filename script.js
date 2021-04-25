@@ -31,14 +31,26 @@ function Pizza(size, crust, toppings){
         this.toppings = toppings;
     }
 
-    $(document).ready(function(){
-        $("#submit").click(function(event){
-            event.preventDefault();
-            let size =$("option#size").val();
-            let crust = $("input#crust").val();
-            let toppings = $("input#toppings").val();
-            console.log(size, crust, toppings);
-        })
+    // $(document).ready(function(){
+    //     $("#submit").click(function(event){
+    //         event.preventDefault();
+    //         let size =$("option#size").val();
+    //         let crust = $("input#crust").val();
+    //         let toppings = $("input#toppings").val();
+    //         console.log(size, crust, toppings);
+    //     })
     
-    })
+    // })
 //  let Order1 = new Pizza(size, crust,toppings);  
+
+$(document).ready(function(){
+    $("form#makeOrder").button(function(event){
+        event.preventDefault();
+        let size =$("option#size").val();
+        console.log(size);
+        // let crust = $("input#crust").val();
+        // let toppings = $("input#toppings").val();
+        // console.log(size, crust, toppings);
+    })
+
+})
