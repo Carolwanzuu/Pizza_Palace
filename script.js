@@ -50,7 +50,7 @@ $(document).ready(function(){
     $("form#makeOrder").submit(function(event){
         event.preventDefault();
         let size =$("option.size").val();
-        let crust = $("input#crust").val();
+        let crust = $("input.crust").val();
         let toppings = $("input#toppings").val();
          //console.log(size, crust, toppings);
 

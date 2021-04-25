@@ -26,9 +26,9 @@
                     <div class="form-group">
                         <label for="exampleFormControlSelect1">Size</label>
                         <select class="size">
-                            <option value="small-200">small</option>
-                            <option value="medium-500">medium</option>
-                            <option value="large-1000">large</option>
+                            <option value="small-200" class = "size">small</option>
+                            <option value="medium-500"class = "size">medium</option>
+                            <option value="large-1000"class = "size">large</option>
                         </select>
                     </div>
                 </div>
@@ -39,22 +39,22 @@
                     <div id="crust">
                         <label for="exampleFormControlSelect1">Crust</label>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
-                                value="100" checked>
+                            <input class="form-check-input" type="radio" name="exampleRadios" class="crust"
+                                value="Crispy-100" checked>
                             <label class="form-check-label" for="exampleRadios1">
                                 cripsy
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
-                                value="150">
+                            <input class="form-check-input" type="radio" name="exampleRadios" class="crust"
+                                value="Stuffed-150">
                             <label class="form-check-label" for="exampleRadios2">
                                 Stuffed
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3"
-                                value="200">
+                            <input class="form-check-input" type="radio" name="exampleRadios" class="crust"
+                                value="Gluten_free-200">
                             <label class="form-check-label" for="exampleRadios3">
                                 gluten-free
                             </label>
@@ -100,14 +100,22 @@
             <button type="submit" class="btn">Place Order</button>
         </form>
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-6">
                 <div id="showOrder">
                     <h2></h2>
-                    <ul id = "orders">
+                    <ul id = "orders">git 
 
                     </ul>
                 </div>
 
+                <div class="col-md-6">
+                    <div id="moreDetails">
+                        <h2>More Details</h2>
+                        <p>Size: <span class="type-size"></span></p>
+                        <p>Crust: <span class="type-crust"></span></p>
+                        <p>Toppings: <span class="type-top"></span></p>
+                
+                      </div>
             </div>
         </div>
     </div>
