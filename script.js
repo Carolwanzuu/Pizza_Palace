@@ -44,13 +44,12 @@ function Pizza(size, crust, toppings){
 //  let Order1 = new Pizza(size, crust,toppings);  
 
 $(document).ready(function(){
-    $("form#makeOrder").button(function(event){
+    $("form#makeOrder").submit(function(event){
         event.preventDefault();
         let size =$("option#size").val();
-        console.log(size);
-        // let crust = $("input#crust").val();
-        // let toppings = $("input#toppings").val();
-        // console.log(size, crust, toppings);
+        let crust = $("input#crust").val();
+        let toppings = $("input#toppings").val();
+         //console.log(size, crust, toppings);
     })
 
 })
