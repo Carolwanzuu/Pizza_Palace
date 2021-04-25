@@ -50,6 +50,8 @@ $(document).ready(function(){
         let crust = $("input#crust").val();
         let toppings = $("input#toppings").val();
          //console.log(size, crust, toppings);
+
+         $("ul#contacts").append("<li><span class='contact'>" + newContact.fullName() + "</span></li>");   
     })
 
 })
