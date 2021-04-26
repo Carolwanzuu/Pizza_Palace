@@ -4,15 +4,17 @@
     height: 400vh;
     width: 100%;
 } */
-/* body{
-    background-color: lawngreen;
-} */
+body{
+    background-color: burlywood;
+}
 h2{
     background-image: url("https://images.pexels.com/photos/905847/pexels-photo-905847.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
     height: 500px;
     width: 100%;
     margin: 5%;
     background-size: cover;
+    color: black;
+    opacity: 0.4;
 
 }
 img{

@@ -18,13 +18,17 @@
         <h2>Pizza Palace</h2>
         <form id="makeOrder">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-12">
                     <!-- <img id="imgOne"
                         src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
                         alt=""> -->
                 </div>
-                <div class="col-md-6">
+            </div>
+            <div class="row">
+                <div class="col-md-4">
                     <div class="first">
+                        <img
+                            src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
                         <label>Size</label>
                         <select id="size">
                             <option value="500">small</option>
@@ -34,10 +38,12 @@
                     </div>
                 </div>
 
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class = "second">
+
+
+                <div class="col-md-4">
+                    <div class="second">
+                        <img
+                            src="https://images.unsplash.com/photo-1574126154517-d1e0d89ef734?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cGl6emF8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
                         <label>Crust</label>
                         <select id="crust">
                             <option value="100">Crispy</option>
@@ -45,45 +51,11 @@
                             <option value="200">Gluten-free</option>
                         </select>
                     </div>
-                    <!-- <div id="crust">
-                        <label>Crust</label>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="exampleRadios" 
-                                value="Crispy-100">
-                            <label class="form-check-label" for="exampleRadios1">
-                                cripsy
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="exampleRadios" 
-                                value="Stuffed-150">
-                            <label class="form-check-label" for="exampleRadios2">
-                                Stuffed
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="exampleRadios" 
-                                value="Gluten_free-200">
-                            <label class="form-check-label" for="exampleRadios3">
-                                gluten-free
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <img id="imgTwo"
-                        src="https://images.unsplash.com/photo-1574126154517-d1e0d89ef734?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cGl6emF8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-                        alt="">
-                </div>
-            </div> -->
 
-            <div class="row">
-                <div class="col-md-6">
-                    <img id="imgThree"
-                        src="https://images.unsplash.com/photo-1551978129-b73f45d132eb?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTl8fHBpenphfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60">
                 </div>
-                <div class="col-md-6">
-                    <div class = "third">
+                <div class="col-md-4">
+                    <img
+                        src="https://images.unsplash.com/photo-1551978129-b73f45d132eb?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTl8fHBpenphfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60">
                     <label>Toppings</label>
                     <select id="toppings">
                         <option value="200">Pepperoni</option>
@@ -91,59 +63,46 @@
                         <option value="100">Capers</option>
                     </select>
                 </div>
-                </div>
-                <!----  <div id="toppings">
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
-                                value="200" checked>
-                            <label class="form-check-label" for="exampleRadios1">
-                                Pepperoni
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
-                                value="150">
-                            <label class="form-check-label" for="exampleRadios2">
-                                Gorgonzola
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3"
-                                value="100">
-                            <label class="form-check-label" for="exampleRadios3">
-                                Capers
-                            </label>
-                        </div>
-                    </div>
-
-                </div> -->
 
                 <button type="submit" class="btn btn-success">Place Order</button>
-        </form>
-        <br>
-        <br>
 
-        <button type = "submit" class = "btn btn-warning" id = "checkout">Check Out</button>
+            </div>
+
+
+
+        </form>
+        <div class="end">
+            <button type="submit" class="btn btn-warning" id="checkout">Check Out</button>
+        </div>
         <!-- <input type="button" class="btn" id = "submit" value = "Place Order"> -->
         <div class="row">
             <div class="col-md-6">
-            <table>
-                <thead>
-                <tr>
-                    <th>OrderNo</th>
-                    <th>Size</th>
-                    <th>Crust</th>
-                    <th>Toppings</th>
-                    <th>Total</th>
-                </tr>
-                </thead>
-                <tbody id= "tblBody">
-
-                </tbody>
-            </table>
+                <div class="table-responive">
+                    <table class = "table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>OrderNo</th>
+                                <th>Size</th>
+                                <th>Crust</th>
+                                <th>Toppings</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tblBody">
+                            <!-- <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td> -->
+                        </tbody>
+                    </table>
                 </div>
 
-                <!-- <div class="col-md-6">
+                </tbody>
+                </table>
+            </div>
+
+            <!-- <div class="col-md-6">
                     <div id="moreDetails">
                         <h2>More Details</h2>
                         <p>Size: <span class="type-size"></span></p>
@@ -152,8 +111,8 @@
 
                     </div>
                 </div>  -->
-            </div>
         </div>
+    </div>
 
 </body>
 
