@@ -29,22 +29,56 @@ function Pizza(size, crust, toppings){
         this.size = size;
         this.crust = crust;
         this.toppings = toppings;
+        this.total = (parseInt(this.size) + parseInt(this.crust) + parseInt(this.toppings));
+    }
+
+
+    Pizza.prototype.getSize = function(size){
+        if(size==="500"){
+            return `Small - ${this.size}`
+        }else if(size==="1000"){
+            return `Medium - ${this.size}`
+        }else if(size==="1500"){
+            return `Large - ${this.size}`
+        }   
+    }
+    Pizza.prototype.getCrust = function(crust){
+        if(crust==="100"){
+            return `Crispy - ${this.crust}`
+        }else if(crust==="150"){
+            return `Stuffed - ${this.crust}`
+        }else if(crust==="200"){
+            return `Gluten-free - ${this.crust}`
+        }   
+    }
+    Pizza.prototype.getToppings = function(toppings){
+        if(toppings==="200"){
+            return `Pepperoni - ${this.toppings}`
+        }else if(toppings==="150"){
+            return `Mushroom - ${this.toppings}`
+        }else if(toppings==="100"){
+            return `Capers - ${this.toppings}`
+        }   
+    }
+    Pizza.prototype.getTotal = function(){
+        return this.total;
     }
     Pizza.prototype.Order = function(){
         return this.size + " " + this.crust + " "+this.toppings;
     }
 
-    // $(document).ready(function(){
-    //     $("#submit").click(function(event){
-    //         event.preventDefault();
-    //         let size =$("option#size").val();
-    //         let crust = $("input#crust").val();
-    //         let toppings = $("input#toppings").val();
-    //         console.log(size, crust, toppings);
-    //     })
-    
-    // })
-//  let newOrder = new Pizza(size, crust,toppings);  
+    function Order(){
+        this.pizza = []
+    }
+
+    var placeOrder = new Order()
+    var sum = 0;
+    function getGrandTotal(){
+        for(let i =0; i < placeOrder.pizza.length; i++){
+            sum += placeOrder.pizza[i].total
+        }
+        return sum;
+    } 
 
 $(document).ready(function(){
     $("form#makeOrder").submit(function(event){
@@ -53,15 +87,38 @@ $(document).ready(function(){
         //console.log(size);
         let crust = $("#crust").val();
         let toppings = $("#toppings").val();
-         console.log(size,crust, toppings);
+        // console.log(size,crust, toppings);
+        var pizzaPal = new Pizza(size, crust,toppings);  
+        
+        var newOrder = new Order()
+        newOrder.pizza.push(pizzaPal)
+        placeOrder.pizza.push(pizzaPal)
+        //console.log(newOrder);
+        
 
-         let newOrder = new Pizza(size, crust,toppings);  
-         //console.log(newOrder);
-
-         $("ul#orders").append("<li><span class='anotherorder'>" + newOrder.Order() + "</span></li>");   
+        newOrder.pizza.forEach(function(pizzaPal){
+            console.log(pizzaPal.getSize(pizzaPal.size))
+            console.log(pizzaPal.getCrust(pizzaPal.crust))
+            console.log(pizzaPal.getToppings(pizzaPal.toppings))
+            $("#tblBody").append(`<tr>
+                    <th scope="row">.</th>
+                    <td>${pizzaPal.getSize(pizzaPal.size)}</td>
+                    <td>${pizzaPal.getCrust(pizzaPal.crust)}</td>
+                    <td>${pizzaPal.getToppings(pizzaPal.toppings)}</td>
+                    <td>${pizzaPal.getTotal()}</td>
+              </tr>`);
+            }) 
+        
+        // $("ul#orders").append("<li><span class='anotherorder'>" + newOrder.total + "</span></li>");   
     })
 
+    $("#checkout").click(function(){
+        console.log(getGrandTotal());
+    })
 })
+
+
+
 //$(".anotherOrder").last().click(function() {
     //     $("#show-contact").show();
     //     $("#show-contact h2").text(newContact.firstName);

@@ -19,17 +19,17 @@
         <form id="makeOrder">
             <div class="row">
                 <div class="col-md-6">
-                    <img id="imgOne"
+                    <!-- <img id="imgOne"
                         src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
-                        alt="">
+                        alt=""> -->
                 </div>
                 <div class="col-md-6">
                     <div class="first">
                         <label>Size</label>
                         <select id="size">
-                            <option value="small-200">small</option>
-                            <option value="medium-500">medium</option>
-                            <option value="large-1000">large</option>
+                            <option value="500">small</option>
+                            <option value="1000">medium</option>
+                            <option value="1500">large</option>
                         </select>
                     </div>
                 </div>
@@ -40,9 +40,9 @@
                     <div class = "second">
                         <label>Crust</label>
                         <select id="crust">
-                            <option value="Crispy-100">Crispy</option>
-                            <option value="Stuffed-150">Stuffed</option>
-                            <option value="Gluten_free-200">Gluten-free</option>
+                            <option value="100">Crispy</option>
+                            <option value="150">Stuffed</option>
+                            <option value="200">Gluten-free</option>
                         </select>
                     </div>
                     <!-- <div id="crust">
@@ -86,9 +86,9 @@
                     <div class = "third">
                     <label>Toppings</label>
                     <select id="toppings">
-                        <option value="Pepperoni-200">Pepperoni</option>
-                        <option value="Mushroom-150">Mushroom</option>
-                        <option value="Capers-100">Capers</option>
+                        <option value="200">Pepperoni</option>
+                        <option value="150">Mushroom</option>
+                        <option value="100">Capers</option>
                     </select>
                 </div>
                 </div>
@@ -118,16 +118,29 @@
 
                 </div> -->
 
-                <button type="submit" class="btn">Place Order</button>
+                <button type="submit" class="btn btn-success">Place Order</button>
         </form>
+        <br>
+        <br>
+
+        <button type = "submit" class = "btn btn-warning" id = "checkout">Check Out</button>
         <!-- <input type="button" class="btn" id = "submit" value = "Place Order"> -->
         <div class="row">
             <div class="col-md-6">
-                <div id="showOrder">
-                    <h2></h2>
-                    <ul id="orders">
+            <table>
+                <thead>
+                <tr>
+                    <th>OrderNo</th>
+                    <th>Size</th>
+                    <th>Crust</th>
+                    <th>Toppings</th>
+                    <th>Total</th>
+                </tr>
+                </thead>
+                <tbody id= "tblBody">
 
-                    </ul>
+                </tbody>
+            </table>
                 </div>
 
                 <!-- <div class="col-md-6">
@@ -138,7 +151,7 @@
                         <p>Toppings: <span class="type-top"></span></p>
 
                     </div>
-                </div> -->
+                </div>  -->
             </div>
         </div>
 
