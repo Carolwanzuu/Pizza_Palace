@@ -4,6 +4,7 @@
     height: 400vh;
     width: 100%;
 } */
+
 body{
     background-color: burlywood;
 }
@@ -15,6 +16,13 @@ h2{
     background-size: cover;
     color: black;
     opacity: 0.4;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 15%;
+    color: red;
+    font-weight: 800;
+    font-size: 50px;
 
 }
 img{
@@ -42,5 +50,9 @@ h2{
 table{
     display:none;
     border: 2px solid black;
-    background-color: grey
+    background-color: grey;
 }
+/* #checkout{
+    align-items: flex-end;
+    justify-content: right;
+} */

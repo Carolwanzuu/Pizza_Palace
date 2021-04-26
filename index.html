@@ -15,68 +15,73 @@
 
 <body>
     <div class="container">
-        <h2>Pizza Palace</h2>
+        
         <form id="makeOrder">
             <div class="row">
                 <div class="col-md-12">
-                    <!-- <img id="imgOne"
-                        src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
-                        alt=""> -->
+                    <h2>Pizza Palace</h2>
+                  
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="first">
-                        <img
-                            src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
-                        <label>Size</label>
-                        <select id="size">
-                            <option value="500">small</option>
-                            <option value="1000">medium</option>
-                            <option value="1500">large</option>
-                        </select>
-                    </div>
-                </div>
-
-
-
-                <div class="col-md-4">
-                    <div class="second">
-                        <img
-                            src="https://images.unsplash.com/photo-1574126154517-d1e0d89ef734?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cGl6emF8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
-                        <label>Crust</label>
-                        <select id="crust">
-                            <option value="100">Crispy</option>
-                            <option value="150">Stuffed</option>
-                            <option value="200">Gluten-free</option>
-                        </select>
-                    </div>
-
-                </div>
-                <div class="col-md-4">
-                    <img
-                        src="https://images.unsplash.com/photo-1551978129-b73f45d132eb?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTl8fHBpenphfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60">
-                    <label>Toppings</label>
-                    <select id="toppings">
-                        <option value="200">Pepperoni</option>
-                        <option value="150">Mushroom</option>
-                        <option value="100">Capers</option>
-                    </select>
-                </div>
-
-                <button type="submit" id = "request" class="btn btn-success">Place Order</button>
 
             </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="first">
+                            <img
+                                src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
+                            <label>Size</label>
+                            <select id="size">
+                                <option value="500">small</option>
+                                <option value="1000">medium</option>
+                                <option value="1500">large</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="second">
+                            <img
+                                src="https://images.unsplash.com/photo-1574126154517-d1e0d89ef734?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cGl6emF8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+                            <label>Crust</label>
+                            <select id="crust">
+                                <option value="100">Crispy</option>
+                                <option value="150">Stuffed</option>
+                                <option value="200">Gluten-free</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="third">
+                            <img
+                                src="https://images.unsplash.com/photo-1551978129-b73f45d132eb?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTl8fHBpenphfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60">
+                            <label>Toppings</label>
+                            <select id="toppings">
+                                <option value="200">Pepperoni</option>
+                                <option value="150">Mushroom</option>
+                                <option value="100">Capers</option>
+                            </select>
+
+                        </div>
+                    </div>
+                </div>
 
 
 
         </form>
-
-        <!-- <input type="button" class="btn" id = "submit" value = "Place Order"> -->
+    </div>
+    <br>
+    <br>
+    <br>
+    <!-- <input type="button" class="btn" id = "submit" value = "Place Order"> -->
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-6">
+
+                <button type="submit" id="request" class="btn btn-primary">Place Order</button>
+
                 <div class="table-responive">
-                    <table class="table table-bordered" id = "myTable">
+                    <table class="table table-bordered" id="myTable">
                         <thead>
                             <tr>
                                 <th>OrderNo</th>
@@ -101,10 +106,10 @@
             </div>
             <div class="col-md-6">
 
-                <button type="submit" class="btn btn-warning" id="checkout">Check Out</button>
+                <button type="submit" class="btn btn-success" id="checkout">Check Out</button>
             </div>
 
-        <!-- <div class="col-md-12">
+            <!-- <div class="col-md-12">
                     <div id="orderSummary">
                         <h2>Order Summary</h2>
                         <p>Size: <span class="type-size"></span></p>
