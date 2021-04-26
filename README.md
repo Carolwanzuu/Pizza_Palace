@@ -1,11 +1,11 @@
-#DELANISTUDIO
+#PIZZAPALACE
 
 ## Author
 Carolyne Wanzuu
 
 
 ## Description
-Its a website that derives an akan name depending on the day you were born"
+Its a website about a pizza joint where people order a number of pizzas and have the option of selecting the size, crust and toppings of their choice. Afterwards one can choose whether they need delivery or not upon which an additional charge is included"
 
 
 ### Prerequisites
@@ -16,7 +16,7 @@ You can install it with the following command in your terminal
 ### Setup
 To access this project on your local files, you can clone it using these steps
 Open your terminal
-Use this command to clone `https://carolwanzuu.github.io/delani_studio/`
+Use this command to clone `/`
 This will clone the repositoty into your local folder
 __Enjoy :)__
 
@@ -41,6 +41,6 @@ To access this project on your local files, you can clone it using these steps
 
 
 ### Live Site
-View [live](https://carolwanzuu.github.io/delani_studio/)
+View [live](/)
 ### Licence
 This project is under the  [MIT](LICENSE) licence
