@@ -97,9 +97,9 @@ $(document).ready(function(){
         
 
         newOrder.pizza.forEach(function(pizzaPal){
-            console.log(pizzaPal.getSize(pizzaPal.size))
-            console.log(pizzaPal.getCrust(pizzaPal.crust))
-            console.log(pizzaPal.getToppings(pizzaPal.toppings))
+            //console.log(pizzaPal.getSize(pizzaPal.size))
+            //console.log(pizzaPal.getCrust(pizzaPal.crust))
+            //console.log(pizzaPal.getToppings(pizzaPal.toppings))
             $("#tblBody").append(`<tr>
                     <th scope="row">.</th>
                     <td>${pizzaPal.getSize(pizzaPal.size)}</td>
@@ -113,9 +113,39 @@ $(document).ready(function(){
     })
 
     $("#checkout").click(function(){
-        console.log(getGrandTotal());
+        alert("Total amount for your order is ksh." + getGrandTotal());
+         //confirm("Do you need delivery?");
+        // if(confirm == true){
+        //     console.log("Additional charges of ksh.200 will be applied to your total amount");
+        // }else if(confirm == false){
+        //     console.log("Thank you for supporting us!");
+        // }
+
+    
+    var delivery = confirm("Do you need delivery?")
+        if(delivery == true){
+            alert("Additional charges of ksh.200 will be added to your total amount");
+            prompt("Enter your location kindly");
+            alert("Your order will be delivered to your location.")
+            alert("Thank you and looking forward to see you soon!")
+        }else{
+            alert("Thank you and welcome again to Pizza Palace!");
+        }
+    
+    // var location = prompt("Enter your location kindly");
+    
+    });
+    $("#request").click(function(){
+        $("#myTable").show();
     })
-})
+
+    $("#checkout").click(function(){
+        $("#checkout").hide();
+    })
+});
+
+
+
 
 
 

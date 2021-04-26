@@ -64,21 +64,19 @@
                     </select>
                 </div>
 
-                <button type="submit" class="btn btn-success">Place Order</button>
+                <button type="submit" id = "request" class="btn btn-success">Place Order</button>
 
             </div>
 
 
 
         </form>
-        <div class="end">
-            <button type="submit" class="btn btn-warning" id="checkout">Check Out</button>
-        </div>
+
         <!-- <input type="button" class="btn" id = "submit" value = "Place Order"> -->
         <div class="row">
             <div class="col-md-6">
                 <div class="table-responive">
-                    <table class = "table table-bordered">
+                    <table class="table table-bordered" id = "myTable">
                         <thead>
                             <tr>
                                 <th>OrderNo</th>
@@ -101,10 +99,14 @@
                 </tbody>
                 </table>
             </div>
+            <div class="col-md-6">
 
-            <!-- <div class="col-md-6">
-                    <div id="moreDetails">
-                        <h2>More Details</h2>
+                <button type="submit" class="btn btn-warning" id="checkout">Check Out</button>
+            </div>
+
+        <!-- <div class="col-md-12">
+                    <div id="orderSummary">
+                        <h2>Order Summary</h2>
                         <p>Size: <span class="type-size"></span></p>
                         <p>Crust: <span class="type-crust"></span></p>
                         <p>Toppings: <span class="type-top"></span></p>
