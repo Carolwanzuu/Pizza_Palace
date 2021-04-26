@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-        <script src="script.js"></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -19,16 +19,17 @@
         <form id="makeOrder">
             <div class="row">
                 <div class="col-md-6">
-                    <img id ="imgOne" src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+                    <img id="imgOne"
+                        src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
                         alt="">
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
                         <label for="exampleFormControlSelect1">Size</label>
                         <select class="size">
-                            <option value="small-200" class = "size">small</option>
-                            <option value="medium-500"class = "size">medium</option>
-                            <option value="large-1000"class = "size">large</option>
+                            <option value="small-200" class="size">small</option>
+                            <option value="medium-500" class="size">medium</option>
+                            <option value="large-1000" class="size">large</option>
                         </select>
                     </div>
                 </div>
@@ -37,10 +38,10 @@
             <div class="row">
                 <div class="col-md-6">
                     <div id="crust">
-                        <label for="exampleFormControlSelect1">Crust</label>
+                        <label>Crust</label>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="exampleRadios" class="crust"
-                                value="Crispy-100" checked>
+                                value="Crispy-100">
                             <label class="form-check-label" for="exampleRadios1">
                                 cripsy
                             </label>
@@ -62,16 +63,27 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <img id="imgTwo" src="https://images.unsplash.com/photo-1574126154517-d1e0d89ef734?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cGl6emF8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    <img id="imgTwo"
+                        src="https://images.unsplash.com/photo-1574126154517-d1e0d89ef734?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cGl6emF8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
                         alt="">
                 </div>
             </div>
+            
             <div class="row">
                 <div class="col-md-6">
-                    <img id="imgThree" src="https://images.unsplash.com/photo-1551978129-b73f45d132eb?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTl8fHBpenphfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60">
+                    <img id="imgThree"
+                        src="https://images.unsplash.com/photo-1551978129-b73f45d132eb?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTl8fHBpenphfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60">
                 </div>
                 <div class="col-md-6">
-                    <div id="toppings">
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Size</label>
+                        <select class="Toppings">
+                            <option value="Pepperoni-200" class="toppings">Pepperoni</option>
+                            <option value="Mushromm-150" class="toppings">Mushroom</option>
+                            <option value="Capers-100" class="toppings">Capers</option>
+                        </select>
+                    </div>
+                 <!----  <div id="toppings">
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
                                 value="200" checked>
@@ -94,31 +106,32 @@
                             </label>
                         </div>
                     </div>
-                    
-            </div>
-            <br>
-            <button type="submit" class="btn">Place Order</button>
+
+                </div> -->
+                
+                 <button type="submit" class="btn">Place Order</button> 
         </form>
+        <!-- <input type="button" class="btn" id = "submit" value = "Place Order"> -->
         <div class="row">
             <div class="col-md-6">
                 <div id="showOrder">
                     <h2></h2>
-                    <ul id = "orders">git 
+                    <ul id="orders">
 
                     </ul>
                 </div>
 
-                <div class="col-md-6">
+                <!-- <div class="col-md-6">
                     <div id="moreDetails">
                         <h2>More Details</h2>
                         <p>Size: <span class="type-size"></span></p>
                         <p>Crust: <span class="type-crust"></span></p>
                         <p>Toppings: <span class="type-top"></span></p>
-                
-                      </div>
+
+                    </div>
+                </div> -->
             </div>
         </div>
-    </div>
 
 </body>
 
