@@ -16,7 +16,7 @@ You can install it with the following command in your terminal
 ### Setup
 To access this project on your local files, you can clone it using these steps
 Open your terminal
-Use this command to clone `/`
+Use this command to clone `https://carolwanzuu.github.io/Pizza_Palace/`
 This will clone the repositoty into your local folder
 __Enjoy :)__
 
@@ -41,6 +41,6 @@ To access this project on your local files, you can clone it using these steps
 
 
 ### Live Site
-View [live](/)
+View [live](https://carolwanzuu.github.io/Pizza_Palace/)
 ### Licence
 This project is under the  [MIT](LICENSE) licence
